@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+@theme{
+  --font-noto: "Noto Sans", sans-serif;
+}
+
+
+.clip-diagonal-right {
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
