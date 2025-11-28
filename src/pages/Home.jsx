@@ -75,7 +75,7 @@ const Home = () => {
           <section className='bg-[#313131] min-w-full text-white flex flex-col items-center justify-center'>
             <img src="/LogoPoke.png" alt="logo-pokemon" className='w-50 h-50' />
             <div className='flex items-center justify-around w-full mb-10'>
-              <div className='flex flex-col'>
+              <div className='flex '>
                 <label htmlFor="text" className='font-noto text-3xl '>Nombre o número</label>
                 <input type="text" id='text' className='p-2.5 bg-white' />
                 <p>¡Usa la busqueda avanzada para encontrar el Pokemon por su tipo!</p>
