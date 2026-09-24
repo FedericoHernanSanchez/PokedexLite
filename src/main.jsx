@@ -1,13 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter  } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 
+if (localStorage.getItem('pokedex-theme') === 'dark') {
+  document.documentElement.classList.add('dark')
+}
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router>
+    <BrowserRouter>
       <App />
-    </Router>
+    </BrowserRouter>
   </StrictMode>,
 )

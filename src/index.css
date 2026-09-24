@@ -2,11 +2,38 @@
 @import "tailwindcss";
 @import "tailwindcss-animated";
 
-@theme{
+@theme {
   --font-noto: "Noto Sans", sans-serif;
+  --color-pokedex-red: #c53030;
+  --color-pokedex-navy: #2d3748;
 }
 
+@layer base {
+  html {
+    color-scheme: light;
+  }
 
-.clip-diagonal-right {
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    min-height: 100vh;
+    font-family: var(--font-noto);
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+  }
+
+  html.dark body {
+    background-color: #1a202c;
+    background-image:
+      linear-gradient(180deg, rgb(26 32 44 / 0.95), rgb(45 55 72 / 0.92)),
+      url("/black.png");
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
 }
